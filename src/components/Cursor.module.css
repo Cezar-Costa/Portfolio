@@ -1,0 +1,51 @@
+.dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: var(--accent);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: width 0.15s, height 0.15s, opacity 0.15s;
+  will-change: transform;
+}
+
+.dot.clicking {
+  width: 6px;
+  height: 6px;
+  opacity: 0.7;
+}
+
+.dot.hovering {
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  mix-blend-mode: difference;
+}
+
+.glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(99,102,241,0.45);
+  pointer-events: none;
+  z-index: 9998;
+  will-change: transform;
+  transition: width 0.2s, height 0.2s, border-color 0.2s;
+}
+
+.glow.glowHover {
+  width: 54px;
+  height: 54px;
+  border-color: rgba(99,102,241,0.7);
+}
+
+/* Hide on touch devices */
+@media (pointer: coarse) {
+  .dot, .glow { display: none; }
+}

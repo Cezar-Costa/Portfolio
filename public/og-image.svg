@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0a0a0f"/>
+  <!-- grid lines -->
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(99,102,241,0.07)" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="glow" cx="50%" cy="40%" r="50%" fx="50%" fy="40%" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="rgba(99,102,241,0.25)"/>
+      <stop offset="100%" stop-color="rgba(99,102,241,0)"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <ellipse cx="600" cy="200" rx="500" ry="300" fill="url(#glow)"/>
+
+  <!-- Name -->
+  <text x="600" y="240" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="white" text-anchor="middle">Cézar Costa</text>
+
+  <!-- Title -->
+  <text x="600" y="310" font-family="monospace" font-size="28" fill="#6366f1" text-anchor="middle">Fullstack Developer</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="360" font-family="monospace" font-size="18" fill="#5a5a7a" text-anchor="middle">Django • React • Docker</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="570" width="1200" height="60" fill="rgba(99,102,241,0.08)"/>
+  <text x="600" y="605" font-family="monospace" font-size="16" fill="#5a5a7a" text-anchor="middle">cezarcosta309@gmail.com • github.com/Cezar-Costa</text>
+</svg>
